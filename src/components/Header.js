@@ -53,7 +53,7 @@ function Header() {
             />
           </svg>
         </CloseWrapper>
-        <a href="/"><li onClick={() => setBurgerStatus(false)}>Capitainz Notes</li></a>
+        <a href="/"><li onClick={() => setBurgerStatus(false)}>capitainz Notes</li></a>
         <a href="/mint"><li onClick={() => setBurgerStatus(false)}>Mint</li></a>
       </BurgerNav>
     </Container>
