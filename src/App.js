@@ -1,23 +1,51 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import styled from "styled-components";
+import Header from "./components/Header";
+import HeaderMint from "./components/HeaderMint";
+import Body from "./components/Body";
+import Mint from "./components/Mint";
+import Footer from "./components/Footer";
+import FooterMint from "./components/FooterMint";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
+const MainContainer = styled.div`
+  background-image: url("https://static.wixstatic.com/media/a67ef4_b614ad3156014c058f5c77f386c79371~mv2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+`;
+
+const RouterContainer = styled.div`
+  background-image: url("https://static.wixstatic.com/media/a67ef4_14b179013a5544d193f27e100ca0afbd~mv2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+`;
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Router>
+        <Switch>
+          <Route path="/mint">
+            <RouterContainer>
+              <HeaderMint />
+              <Mint />
+              <FooterMint />
+            </RouterContainer>
+          </Route>
+
+          <Route path="/">
+            <MainContainer>
+              <Header />
+              <Body />
+              <Footer />
+            </MainContainer>
+          </Route>
+        </Switch>
+      </Router>
     </div>
   );
 }
