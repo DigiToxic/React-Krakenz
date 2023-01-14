@@ -124,7 +124,7 @@ function MintButton() {
 
   useEffect(() => {
     checkWalletIsConnected();
-
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   async function fetchData() {
