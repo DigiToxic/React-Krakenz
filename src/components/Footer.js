@@ -48,6 +48,14 @@ const Button = styled.div`
     width: 50px;
     rotate: 180deg;
   }
+  
+  @media(max-width: 1101px) {
+    margin-bottom: 10px;
+
+    img {
+      width: 35px;
+    }
+  }
 
   @media(max-width: 530px) {
     padding: 12px 15px;

@@ -105,8 +105,8 @@ const Head = styled.div`
     cursor: pointer;
   }
 
-  @media (max-width: 1925px) {
-    height: 802px;
+  @media (max-width: 2200px) {
+    height: 909px;
   }
 
   @media (max-width: 1880px) {
@@ -121,8 +121,12 @@ const Head = styled.div`
     height: 499px;
   }
 
-  @media (max-width: 1101px) {
-    height: 493px;
+  @media (max-width: 1030px) {
+    height: 504px;
+  }
+
+  @media (max-width: 530px) {
+    height: 508px;
   }
 
   @media (max-width: 521px) {

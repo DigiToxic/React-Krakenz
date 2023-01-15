@@ -183,8 +183,33 @@ function MintButton() {
 export default MintButton;
 
 const Container = styled.div`
+
   text-align: center;
   height: 586px;
+
+  @media (max-width: 2200px) {
+    height: 909px;
+  }
+
+  @media (max-width: 1880px) {
+    height: 715px;
+  }
+
+  @media (max-width: 1710px) {
+    height: 668px;
+  }
+
+  @media (max-width: 1500px) {
+    height: 502px;
+  }
+
+  @media (max-width: 1101px) {
+    height: 499px;
+  }
+
+  @media (max-width: 1030px) {
+    height: 514px;
+  }
 `;
 
 const Door = styled.div`
@@ -200,8 +225,33 @@ const Door = styled.div`
   background-size: cover;
   background-size: 900px;
 
-  @media (max-width: 475px) {
+  @media (max-width: 2200px) {
+    background-size: 1200px;
+    height: 900px;
+  }
+
+  @media (max-width: 1881px) {
+    background-size: 1000px;
+    height: 700px;
+  }
+
+  @media (max-width: 1720px) {
+    background-size: 1000px;
+    height: 700px;
+  }
+
+  @media (max-width: 1500px) {
     background-size: 800px;
+    height: 550px;
+  }
+
+  @media (max-width: 1101px) {
+    background-size: 700px;
+    height: 500px;
+  }
+
+  @media (max-width: 921px) {
+    background-size: 700px;
   }
 
   @media (max-width: 440px) {
@@ -216,10 +266,10 @@ const Button = styled.div`
 `;
 
 const Button1 = styled.div`
-  padding: 15px;
+padding: 18px;
   border: none;
   border-radius: 12px;
-  width: 240px;
+  width: 280px;
   color: white;
   font-size: 17px;
   font-family: Kongtext;
@@ -231,9 +281,14 @@ const Button1 = styled.div`
     background: rgb(60, 150, 240);
   }
 
-  @media (max-width: 475px) {
-    width: 220px;
+  @media (max-width: 1500px) {
+    width: 240px;
     font-size: 15px;
+  }
+
+  @media (max-width: 1101px) {
+    width: 200px;
+    font-size: 14px;
   }
 
   @media (max-width: 440px) {
@@ -243,10 +298,10 @@ const Button1 = styled.div`
 `;
 
 const Button2 = styled.div`
-  padding: 15px;
+  padding: 18px;
   border: none;
   border-radius: 12px;
-  width: 240px;
+  width: 280px;
   color: white;
   font-size: 17px;
   cursor: pointer;
@@ -256,8 +311,13 @@ const Button2 = styled.div`
     background: rgb(64, 64, 64);
   }
 
-  @media (max-width: 475px) {
-    width: 220px;
+  @media (max-width: 1500px) {
+    width: 240px;
+    font-size: 15px;
+  }
+
+  @media (max-width: 1101px) {
+    width: 200px;
     font-size: 15px;
   }
 
@@ -273,14 +333,14 @@ const PlusMoins = styled.div`
   justify-content: center;
   margin-top: 50px;
 
-  @media (max-width: 475px) {
+  @media (max-width: 1101px) {
     margin-top: 30px;
   }
 `;
 
 const ButtonPlus = styled.div`
-  margin-right: 40px;
-  cursor: pointer;
+    margin-right: 40px;
+    cursor: pointer;
     font-size: 30px;
     color: white;
     height: auto;
@@ -319,7 +379,7 @@ const ButtonPlus = styled.div`
     text-align: center;
     margin: -20px -20px;
     line-height: 20px;
-    padding: 15px 25px;
+    padding: 18px 28px;
     
     background: #000000;
     background:
@@ -341,7 +401,7 @@ const ButtonPlus = styled.div`
   }
   }
 
-  @media (max-width: 475px) {
+  @media (max-width: 1101px) {
     div {
       padding: 12px 22px;
     }
@@ -355,10 +415,19 @@ const ButtonMoins = styled(ButtonPlus)`
 
 const MintAmount = styled.div`
   display: block;
-  font-size: 18px;
+  font-size: 22px;
   font-family: Kongtext;
   font-weight: bold;
   margin-top: 60px;
+
+  @media (max-width: 1500px) {
+    font-size: 20px;
+    margin-top: 50px;
+  }
+
+  @media (max-width: 1101px) {
+    margin-top: 30px;
+  }
 
   @media (max-width: 440px) {
     font-size: 16px;
@@ -368,10 +437,20 @@ const MintAmount = styled.div`
 
 const TotalSupply = styled.div`
   display: block;
-  font-size: 18px;
+  font-size: 22px;
   font-family: Kongtext;
   font-weight: bold;
   margin-top: 75px;
+
+  @media (max-width: 1500px) {
+    font-size: 20px;
+    margin-top: 50px;
+  }
+
+  @media (max-width: 1101px) {
+    font-size: 16px;
+    margin-top: 50px;
+  }
 
   @media (max-width: 440px) {
     font-size: 16px;
