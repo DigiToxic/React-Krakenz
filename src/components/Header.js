@@ -53,8 +53,12 @@ function Header() {
             />
           </svg>
         </CloseWrapper>
-        <a href="/"><li onClick={() => setBurgerStatus(false)}>capitainz Notes</li></a>
-        <a href="/mint"><li onClick={() => setBurgerStatus(false)}>Mint</li></a>
+        <a href="/">
+          <li onClick={() => setBurgerStatus(false)}>Captainz Notes</li>
+        </a>
+        <a href="/mint">
+          <li onClick={() => setBurgerStatus(false)}>Mint</li>
+        </a>
       </BurgerNav>
     </Container>
   );
@@ -94,7 +98,8 @@ const BurgerNav = styled.div`
   top: 0;
   bottom: 0;
   right: 0;
-  background: rgb(238, 213, 238);
+  background: rgb(2, 7, 93);
+  color: white;
   width: 35%;
   z-index: 2;
   list-style: none;

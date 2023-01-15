@@ -4,7 +4,7 @@
 }
 
 a {
-  color: black;
+  color: white;
 }
 
 a:link {
@@ -88,5 +88,31 @@ body {
 @media(max-width: 530px) {
   .etherscan {
     width: 60px;
+  }
+}
+
+.Day {
+  width: 500px;
+}
+
+.Krakenz {
+  width: 800px;
+}
+
+@media(max-width: 815px) {
+  .Krakenz {
+    width: 700px;
+  }
+}
+
+@media(max-width: 715px) {
+  .Krakenz {
+    width: 600px;
+  }
+}
+
+@media(max-width: 615px) {
+  .Krakenz {
+    width: 500px;
   }
 }
