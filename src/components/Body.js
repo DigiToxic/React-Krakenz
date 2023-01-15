@@ -92,7 +92,6 @@ function Body() {
 export default Body;
 
 const Container = styled.div`
-  min-height: 586px;
 `;
 
 const Head = styled.div`
@@ -104,6 +103,26 @@ const Head = styled.div`
   img {
     width: 500px;
     cursor: pointer;
+  }
+
+  @media (max-width: 1925px) {
+    height: 802px;
+  }
+
+  @media (max-width: 1880px) {
+    height: 715px;
+  }
+
+  @media (max-width: 1710px) {
+    height: 668px;
+  }
+
+  @media (max-width: 1500px) {
+    height: 499px;
+  }
+
+  @media (max-width: 1101px) {
+    height: 493px;
   }
 
   @media (max-width: 521px) {
