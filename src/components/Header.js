@@ -5,9 +5,9 @@ function Header() {
   const [burgerStatus, setBurgerStatus] = useState(false);
 
   return (
-    <Container id="Head">
+    <Container>
       <Button>
-        <a href="/">
+        <a href="/captainz">
           <img src="/images/capitainz.png" alt="" className="Capitainz" />
         </a>
         <a href="/mint">

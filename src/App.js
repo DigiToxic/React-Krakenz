@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Header from "./components/Header";
 import HeaderMint from "./components/HeaderMint";
 import Body from "./components/Body";
+import Captainz from "./components/Captainz";
 import Mint from "./components/Mint";
 import Footer from "./components/Footer";
 import FooterMint from "./components/FooterMint";
@@ -37,11 +38,19 @@ function App() {
             </RouterContainer>
           </Route>
 
+          <Route path="/captainz">
+            <RouterContainer>
+              <HeaderMint />
+              <Captainz />
+              <Footer />
+            </RouterContainer>
+          </Route>
+
           <Route path="/">
             <MainContainer>
               <Header />
               <Body />
-              <Footer />
+              <FooterMint />
             </MainContainer>
           </Route>
         </Switch>

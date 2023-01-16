@@ -237,7 +237,6 @@ const Door = styled.div`
 
   @media (max-width: 1720px) {
     background-size: 1000px;
-    height: 700px;
   }
 
   @media (max-width: 1500px) {
