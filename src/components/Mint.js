@@ -124,7 +124,7 @@ function MintButton() {
 
   useEffect(() => {
     checkWalletIsConnected();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+        // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   async function fetchData() {
@@ -184,6 +184,7 @@ function MintButton() {
 export default MintButton;
 
 const Container = styled.div`
+
   text-align: center;
   height: 586px;
 
@@ -265,7 +266,7 @@ const Button = styled.div`
 `;
 
 const Button1 = styled.div`
-  padding: 18px;
+padding: 18px;
   border: none;
   border-radius: 12px;
   width: 280px;
