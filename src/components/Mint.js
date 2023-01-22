@@ -1744,9 +1744,7 @@ function MintButton() {
         // let nftTxn = await nftContract.mint(amount, { value: ethers.utils.parseEther(cost.toString()) });
         console.log("proof", proof);
 
-        let nftTxn = await nftContract.WLmint(proof, amount, {
-          value: ethers.utils.parseEther(cost.toString()),
-        });
+        let nftTxn = await nftContract.WLmint(proof, amount, {value: ethers.utils.parseEther(cost.toString()),});
         console.log("Minting... please wait!");
         await nftTxn.wait();
 
