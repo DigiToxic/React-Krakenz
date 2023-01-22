@@ -1,22 +1,26 @@
-import React from 'react'
+import React from "react";
 import styled from "styled-components";
+import WalletChecker from "./walletChecker";
 
 function Soon() {
   return (
     <Container>
-    <Door>
-      <p>Mint soon...</p>
-    </Door>
-  </Container>
-  )
+      <Door>
+        <div>
+          <WalletChecker />
+        </div>
+        <p>Mint soon...</p>
+      </Door>
+    </Container>
+  );
 }
 
-export default Soon
+export default Soon;
 
 const Container = styled.div`
   text-align: center;
   height: 586px;
-  
+
   p {
     font-size: 20px;
     font-family: Kongtext;
@@ -59,6 +63,16 @@ const Door = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   background-size: 900px;
+
+  div {
+    margin-bottom: 125px;
+  }
+
+  @media (max-width: 1100px) {
+    div {
+      margin-bottom: 100px;
+    }
+  }
 
   @media (max-width: 2200px) {
     background-size: 1200px;

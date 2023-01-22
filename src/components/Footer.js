@@ -8,7 +8,7 @@ function Footer() {
       <Logo>
         <img src="/images/pixel-opensea.png" alt="" className="Opensea" />
         <a
-          href="https://twitter.com/captainznotes"
+          href="https://twitter.com/TheKrakenzNFT"
           rel="noreferrer"
           target="_blank"
         >
