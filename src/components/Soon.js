@@ -9,7 +9,9 @@ function Soon() {
         <div>
           <WalletChecker />
         </div>
-        <p>Mint soon...</p>
+        <span>
+          <p>Mint soon...</p>
+        </span>
       </Door>
     </Container>
   );
@@ -21,7 +23,7 @@ const Container = styled.div`
   text-align: center;
   height: 586px;
 
-  p {
+  span {
     font-size: 20px;
     font-family: Kongtext;
   }
@@ -65,7 +67,7 @@ const Door = styled.div`
   background-size: 900px;
 
   div {
-    margin-bottom: 125px;
+    margin-bottom: 100px;
   }
 
   @media (max-width: 1100px) {

@@ -92,6 +92,7 @@ const Text = styled.div`
 
   p {
     font-size: 15px;
+    font-family: Kongtext;
   }
 
   @media (max-width: 1500px) {
