@@ -2545,11 +2545,11 @@ function MintButton() {
         let amount = mintAmount;
 
         console.log("Initialize payment");
-        let cost = 0.005 * amount;
-        // let nftTxn = await nftContract.mint(amount, { value: ethers.utils.parseEther(cost.toString()) });
+        let cost = 0.002 * amount;
+        let nftTxn = await nftContract.mint(amount, { value: ethers.utils.parseEther(cost.toString()) });
         console.log("proof", proof);
 
-        let nftTxn = await nftContract.WLmint(proof, amount, {value: ethers.utils.parseEther(cost.toString()),});
+        // let nftTxn = await nftContract.WLmint(proof, amount, {value: ethers.utils.parseEther(cost.toString()),});
         console.log("Minting... please wait!");
         await nftTxn.wait();
 
@@ -2592,10 +2592,10 @@ function MintButton() {
   function increment() {
     //setCount(prevCount => prevCount+=1);
     setMintAmount(function (prevCount) {
-      if (prevCount < 2) {
+      if (prevCount < 4) {
         return (prevCount += 1);
       } else {
-        return (prevCount = 2);
+        return (prevCount = 4);
       }
     });
   }
