@@ -2647,22 +2647,6 @@ const Container = styled.div`
   @media (max-width: 1880px) {
     height: 715px;
   }
-
-  @media (max-width: 1710px) {
-    height: 668px;
-  }
-
-  @media (max-width: 1500px) {
-    height: 502px;
-  }
-
-  @media (max-width: 1101px) {
-    height: 499px;
-  }
-
-  @media (max-width: 1030px) {
-    height: 514px;
-  }
 `;
 
 const Door = styled.div`
@@ -2692,21 +2676,16 @@ const Door = styled.div`
     background-size: 1000px;
   }
 
-  @media (max-width: 1500px) {
-    background-size: 800px;
-    height: 550px;
-  }
-
   @media (max-width: 1101px) {
-    background-size: 700px;
-    height: 500px;
+    background-size: 900px;
+    height: 700px;
   }
 
   @media (max-width: 921px) {
-    background-size: 700px;
+    background-size: 900px;
   }
 
-  @media (max-width: 440px) {
+  @media (max-width: 475px) {
     background-size: 700px;
   }
 `;

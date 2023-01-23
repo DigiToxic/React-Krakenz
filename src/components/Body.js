@@ -36,26 +36,6 @@ const Head = styled.div`
     height: 715px;
   }
 
-  @media (max-width: 1710px) {
-    height: 668px;
-  }
-
-  @media (max-width: 1540px) {
-    height: 586px;
-  }
-
-  @media (max-width: 1500px) {
-    height: 499px;
-  }
-
-  @media (max-width: 1030px) {
-    height: 504px;
-  }
-
-  @media (max-width: 530px) {
-    height: 508px;
-  }
-
   @media (max-width: 521px) {
     img {
       width: 400px;

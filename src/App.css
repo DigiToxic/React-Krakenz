@@ -55,7 +55,7 @@ body {
 .Opensea {
   width: 75px;
   margin-left: 30px;
-  margin-bottom: 15px;
+  margin-bottom: 24px;
   cursor: pointer;
 }
 
@@ -68,7 +68,7 @@ body {
 .Twitter {
   width: 75px;
   margin-left: 30px;
-  margin-bottom: 20px;
+  margin-bottom: 29px;
   cursor: pointer;
 }
 
@@ -81,7 +81,7 @@ body {
 .etherscan {
   width: 75px;
   margin-left: 30px;
-  margin-bottom: 15px;
+  margin-bottom: 24px;
   cursor: pointer;
 }
 

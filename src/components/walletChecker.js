@@ -64,16 +64,6 @@ const Container = styled.div`
     background-color: lightblue;
   }
 
-  @media (max-width: 1500px) {
-    input {
-      padding: 10px;
-    }
-
-    button {
-      padding: 10px;
-    }
-  }
-
   @media (max-width: 1100px) {
     margin-left: -10px;
     input {
@@ -82,6 +72,18 @@ const Container = styled.div`
 
     button {
       padding-right: 5px;
+    }
+  }
+
+  @media (max-width: 475px) {
+    button {
+      width: 110px;
+      padding: 10px;
+    }
+
+    input {
+      width: 100px;
+      padding: 10px;
     }
   }
 `;
@@ -95,13 +97,8 @@ const Text = styled.div`
     font-family: Kongtext;
   }
 
-  @media (max-width: 1500px) {
+  @media (max-width: 1100px) {
     p {
       font-size: 14px;
     }
-
-    @media (max-width: 1100px) {
-      p {
-        font-size: 14px;
-      }
 `;
