@@ -5,7 +5,13 @@ function FooterMint() {
   return (
     <Container>
       <Logo>
-        <img src="/images/pixel-opensea.png" alt="" className="Opensea" />
+        <a
+          href="https://opensea.io/fr/collection/thekrakenz"
+          rel="noreferrer"
+          target="_blank"
+        >
+          <img src="/images/pixel-opensea.png" alt="" className="Opensea" />
+        </a>
         <a
           href="https://twitter.com/TheKrakenzNFT"
           rel="noreferrer"
@@ -13,7 +19,13 @@ function FooterMint() {
         >
           <img src="/images/pixel-twitter.png" alt="" className="Twitter" />
         </a>
-        <img src="/images/pixel-etherscan.png" alt="" className="etherscan" />
+        <a
+          href="https://etherscan.io/address/0x6f5e46abfc5c4bd49c4c2cfec15bfc79c84e1d6a"
+          rel="noreferrer"
+          target="_blank"
+        >
+          <img src="/images/pixel-etherscan.png" alt="" className="etherscan" />
+        </a>
       </Logo>
     </Container>
   );

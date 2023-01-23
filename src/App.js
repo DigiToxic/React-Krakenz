@@ -4,8 +4,8 @@ import Header from "./components/Header";
 import HeaderMint from "./components/HeaderMint";
 import Body from "./components/Body";
 import Captainz from "./components/Captainz";
-//  import Mint from "./components/Mint";
-import Soon from "./components/Soon";
+import Mint from "./components/Mint";
+//  import Soon from "./components/Soon";
 import Footer from "./components/Footer";
 import FooterMint from "./components/FooterMint";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
@@ -34,7 +34,7 @@ function App() {
           <Route path="/mint">
             <RouterContainer>
               <HeaderMint />
-              <Soon />
+              <Mint />
               <FooterMint />
             </RouterContainer>
           </Route>

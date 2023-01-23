@@ -5,7 +5,7 @@ import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import abi from "./abi/abi.json";
 
-const contractAddress = "0x46A0AFE81b98A72040Fa2EE1Bfd09aD9d166fB44";
+const contractAddress = "0x6F5E46ABfC5c4Bd49C4c2cfec15bfc79c84e1d6a";
 const API_KEY = "VRRW7A39QJDDVF698UJFWU1R9V5FABRMQJ";
 
 export const addresses = [
@@ -2554,7 +2554,7 @@ function MintButton() {
         await nftTxn.wait();
 
         console.log(
-          `Minted, see transaction: https://goerli.etherscan.io/tx/${nftTxn.hash}`
+          `Minted, see transaction: https://etherscan.io/tx/${nftTxn.hash}`
         );
       } else {
         console.log("Ethereum object doesn't exist");
@@ -2579,7 +2579,7 @@ function MintButton() {
 
   async function fetchData() {
     const response = await fetch(
-      `https://api-goerli.etherscan.io/api?module=stats&action=tokensupply&contractaddress=${contractAddress}&apikey=${API_KEY}`
+      `https://api.etherscan.io/api?module=stats&action=tokensupply&contractaddress=${contractAddress}&apikey=${API_KEY}`
     );
     const mintedTokens = await response.json();
     setSupply(mintedTokens.result);

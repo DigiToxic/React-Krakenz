@@ -6,7 +6,13 @@ function Footer() {
   return (
     <Container>
       <Logo>
-        <img src="/images/pixel-opensea.png" alt="" className="Opensea" />
+        <a
+          href="https://opensea.io/fr/collection/thekrakenz"
+          rel="noreferrer"
+          target="_blank"
+        >
+          <img src="/images/pixel-opensea.png" alt="" className="Opensea" />
+        </a>
         <a
           href="https://twitter.com/TheKrakenzNFT"
           rel="noreferrer"
@@ -14,7 +20,13 @@ function Footer() {
         >
           <img src="/images/pixel-twitter.png" alt="" className="Twitter" />
         </a>
-        <img src="/images/pixel-etherscan.png" alt="" className="etherscan" />
+        <a
+          href="https://etherscan.io/address/0x6f5e46abfc5c4bd49c4c2cfec15bfc79c84e1d6a"
+          rel="noreferrer"
+          target="_blank"
+        >
+          <img src="/images/pixel-etherscan.png" alt="" className="etherscan" />
+        </a>
       </Logo>
 
       <Link to="Head" spy={true} smooth={true}>
@@ -48,8 +60,8 @@ const Button = styled.div`
     width: 50px;
     rotate: 180deg;
   }
-  
-  @media(max-width: 1101px) {
+
+  @media (max-width: 1101px) {
     margin-bottom: 10px;
 
     img {
@@ -57,7 +69,7 @@ const Button = styled.div`
     }
   }
 
-  @media(max-width: 530px) {
+  @media (max-width: 530px) {
     padding: 12px 15px;
     margin-right: 20px;
 
