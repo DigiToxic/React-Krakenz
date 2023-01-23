@@ -7,7 +7,7 @@ function Footer() {
     <Container>
       <Logo>
         <a
-          href="https://opensea.io/fr/collection/thekrakenz"
+          href="https://opensea.io/collection/thekrakenz"
           rel="noreferrer"
           target="_blank"
         >
