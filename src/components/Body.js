@@ -5,10 +5,7 @@ function Body() {
   return (
     <Container>
       <Head>
-        <img
-          src="/images/Krakenz.png"
-          alt=""
-        />
+        <img src="/images/Krakenz.png" alt="" />
       </Head>
     </Container>
   );
@@ -17,6 +14,13 @@ function Body() {
 export default Body;
 
 const Container = styled.div`
+@media (max-width: 2200px) {
+  height: 800px;
+}
+
+@media (max-width: 1880px) {
+  height: 715px;
+}
 `;
 
 const Head = styled.div`
@@ -29,11 +33,11 @@ const Head = styled.div`
   }
 
   @media (max-width: 2200px) {
-    height: 909px;
+    height: 800px;
   }
 
   @media (max-width: 1880px) {
-    height: 715px;
+    height: 580px;
   }
 
   @media (max-width: 521px) {

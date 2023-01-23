@@ -2476,7 +2476,9 @@ export const addresses = [
   "0x5513F5666CC9d0C00ac35cf16E9fCf5898003290",
   "0x32A565A4F514FC02B65f0354D8f25c232E9BEDB7",
   "0xbBDffB74A91cf24A9B072a5Ac6BD5DEf7936bc99",
-  "0xA9852147ee8Bbd4B5bb4cb0Bc65d6C1E960E606a"
+  "0xA9852147ee8Bbd4B5bb4cb0Bc65d6C1E960E606a",
+  "0xD028780dDCBBD7930a9C27da65D3ca6f440E5127",
+  "0x9A41426ae9C88110188276bAF8046dC420005249"
 ];
 
 function MintButton() {
@@ -2502,13 +2504,8 @@ function MintButton() {
       const tree = new MerkleTree(leaves, keccak256, { sortPairs: true });
       const buf2hex = (x) => "0x" + x.toString("hex");
 
-      console.log("root", buf2hex(tree.getRoot()));
-
       leaf = keccak256(accounts[0]); // accounts from accounts using accountsconnect/metamask
       setProof(tree.getProof(leaf).map((x) => buf2hex(x.data)));
-
-      console.log("proof", proof);
-      console.log(accounts);
 
       if (accounts.lenght !== 0) {
         const account = accounts[0];
